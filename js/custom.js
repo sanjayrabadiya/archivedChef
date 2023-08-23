@@ -137,6 +137,21 @@ $(document).ready(function(){
 			]
 		});
 	}
+	if($('.recipes-filter-wrapper').length > 0) {
+		$(".recipes-single-filter-title a").on("click", function(e){
+			e.preventDefault();
+			if($(this).parent().hasClass("active"))
+			{
+				$(this).parent().removeClass("active");
+				$(this).parent().parent().find(".recipes-single-filter-list").slideUp();
+			}
+			else
+			{
+				$(this).parent().addClass("active");
+				$(this).parent().parent().find(".recipes-single-filter-list").slideDown();
+			}
+		});
+	}
 	
 	
    

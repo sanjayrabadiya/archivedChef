@@ -584,6 +584,35 @@ footer{background-color: var(--gray-bg);}
 .btn-submit button{background-color: var(--white);border: 0;color: var(--heading-color);text-align: right;font-family: var(--heading-font);font-size: 45.34px;font-style: normal;font-weight: 400;line-height: 1.18;text-transform: uppercase;z-index: 1;position: relative;padding-left: 20px;}
 .btn-submit::before{content: "";height: 1.5px;width: 100%;position: absolute;left: 0;background: #000;top: 50%;transform: translateY(-50%);}
 
+/***************** Recipes page ***********/
+.recipes-search-section .black_circle{display: none;}
+.recipes-product-list {padding: 47px 0;}
+.recipes-product-list .sec-heading {max-width: 767px;margin: 0 auto;padding: 0 15px;}
+.recipes-product-filter{margin-top: 30px;}
+.sidebar-filter{width: 25%;padding:15px 15px 0 0;}
+.recipes-products{width: 75%;margin-top: 0 !important;}
+.recipes-products .item{width: 33.33%;}
+.recipes-filter-wrapper {display: block;width: 100%;max-width: 100%;padding: 15px;background-color: var(--pink-light-bg);}
+.recipes-filter-wrapper-title {display: block;width: 100%;max-width: 100%;margin-bottom: 20px;text-align: center;}
+.recipes-filter-wrapper-title p {font-family: var(--heading-font);font-weight: 400;font-size: 16px;line-height: 22px;color: var(--black);padding: 0px;margin: 0px;}
+.recipes-single-filter {display: block;width: 100%;max-width: 100%;}
+.recipes-single-filter-title {display: block;width: 100%;max-width: 100%;}
+.recipes-single-filter-title a, .recipes-single-filter-title a:hover, .recipes-single-filter-title a:focus {display: inline-block;vertical-align: top;outline: none;text-decoration: none;width: 100%;max-width: 100%;font-family: var(--heading-font);font-weight: 400;font-size: 16px;line-height: 22px;color: var(--black);padding: 10px 10px;margin: 0px;border-bottom: 1px solid var(--black);text-transform: uppercase;text-align: center;position: relative;}
+.recipes-single-filter-list {display: none;width: 100%;max-width: 100%;}
+.recipes-single-filter-list ul {display: block;width: 100%;max-width: 100%;padding: 0px;margin: 0px;list-style: none;padding: 10px 0px;}
+.recipes-single-filter-list ul li {display: flex;align-items: center;width: 100%;max-width: 100%;padding: 5px 0px;}
+.recipes-single-filter-list ul li input, 
+.recipes-single-filter-list ul li input:hover, 
+.recipes-single-filter-list ul li input:focus {width: 14px;height: 14px;border-radius: 50%;-webkit-appearance: none;appearance: none;background: var(--white);border: none;margin: 0 10px 0 0;outline: none;text-decoration: none;display: inline-block;vertical-align: middle;}
+.recipes-single-filter-list ul li label, 
+.recipes-single-filter-list ul li label:hover, 
+.recipes-single-filter-list ul li label:focus {display: inline-block;vertical-align: top;width: calc(100% - 21px);font-family: var(--primary-font);font-weight: 400;font-size: 16px;line-height: 20px;color: var(--black);margin: 0px;padding: 0px 0px;}
+.recipes-single-filter-list ul li input.input-radio:checked,
+.recipes-single-filter-list ul li input[type=checkbox]:checked  {background-color: var(--black);}
+.recipes-single-filter-submit{display: block;width: 100%;max-width: 100%;text-align: center;margin-top: 20px;}
+/***************** Recipes details plugin css ***********/
+
+
 @media only screen and (min-width: 1500px) and (max-width:1800px) {
   .black_circle {left: 0;}
   .product-slider{    margin: 0 -15px;    margin-top: 30px;}
@@ -593,6 +622,7 @@ footer{background-color: var(--gray-bg);}
   .product-box .content p {font-size: 18px;margin-top: 15px;}
   .banner-content { min-height: 750px;}
   .category {padding: 80px 0;}
+  .sidebar-filter {padding:15px 0 0 0;}
 }
 @media only screen and (min-width: 1200px) and (max-width:1499px) {
   .custom-container{max-width: 1170px;}
@@ -649,19 +679,13 @@ footer{background-color: var(--gray-bg);}
   .recipe-form .field {margin-top: 30px;}
   .recipe-form .field .input-control {  font-size: 20px; padding: 14px 20px 14px;}
   .btn-submit button{font-size: 36px;}
-
-
-
-
-
-
+  .sidebar-filter {padding: 8px 0 0 0;}
 }
 @media only screen and (min-width: 992px) and (max-width:1199px) {
   p{font-size: 16px;}
   .main-header .wrapper {min-height: 120px;}
   .menu > ul > li{margin: 0 20px;font-size: 18px;}
   .logo a img{max-height: 30px;}
-
   .banner{padding: 25px 0;}
   .banner-content{padding: 25px 0;min-height: 480px;}
   .bannner-slider .item {width: 30%;}
@@ -670,7 +694,6 @@ footer{background-color: var(--gray-bg);}
   .sec-heading p {font-size: 16.435px;margin-top: 15px;}
   .banner-content .details .buttons {margin-top: 15px;}
   .other_info {margin-top: 15px;}
-
   .search-section .wrapper{padding: 30px 15px;}
   .search-section .search-field {width: 450px;}
   .search-tag-list{width: calc(100% - 450px);    padding-right: 45px;}
@@ -740,9 +763,7 @@ footer{background-color: var(--gray-bg);}
   .recipe-form .field textarea {min-height: 200px;}
   .btn-submit button{font-size: 24px;}
   .btn-submit {margin-top: 15px;}
-
-
-
+  .sidebar-filter {padding: 8px 0px 0 0;}
 }
 @media only screen and (min-width: 1200px){
   .product-slider-list .item:nth-child(n + 5){padding-top: 40px;}
@@ -826,9 +847,6 @@ footer{background-color: var(--gray-bg);}
   .recipe-form .field textarea {min-height: 200px;}
   .btn-submit button{font-size: 24px;}
   .btn-submit {margin-top: 15px;}
-
-
-
   .recipes-form{padding: 15px;}
   .recipes-form h2 {font-size: 30px;}
   .recipes-form p {font-size: 16px;margin: 10px auto 0;    max-width: 90%;}
@@ -842,18 +860,14 @@ footer{background-color: var(--gray-bg);}
   .most-popular-list .item .content{padding-left: 15px;}
   .most-popular-list .item .content h4 {font-size: 14px;    letter-spacing: 1px;}
   .most-popular-list .item{margin-top: 20px;}
-
-
-  
-
-
-
+  .sidebar-filter { width: 33%;padding: 8px 0px 0 0;}
+  .recipes-products{width: 67%;}
+  .recipes-products .item{width: 50%;}
 }
 @media only screen and (min-width: 768px){
   .display-mobile{display: none;}
   .mobile-menu{display: none;}
-  .bannner-slider .item{position: absolute;top:50%;transform: translateY(-50%);}
-  
+  .bannner-slider .item{position: absolute;top:50%;transform: translateY(-50%);}  
 }
 @media only screen and (max-width: 767px){
   p{font-size: 16px;}
@@ -979,9 +993,8 @@ footer{background-color: var(--gray-bg);}
   .recipe-form .field textarea {min-height: 200px;}
   .btn-submit {margin-top: 10px;}
   .btn-submit button{font-size: 20px;}
-
-
-
+  .recipes-product-list{padding: 25px 0;}
+  .sidebar-filter{width: 100%;padding: 0;}
 }
 
 
